@@ -1,3 +1,26 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+
+main {
+  background-color: $white;
+  width: 900px;
+  margin: 100px auto 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 20px;
+
+  .header-wrapper {
+    border-bottom: 4px solid $gray-light;
+  }
+
+  .avatar {
+    width: $image-size;
+    height: $image-size;
+    border-radius: 50%;
+    margin-top: -50px;
+  }
+}
