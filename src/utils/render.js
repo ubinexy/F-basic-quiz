@@ -11,8 +11,10 @@ export const fetchAndRenderHeader = async (backendUrl) => {
       },
       method: "GET",
     });
-    const x = await response.json();
-    $("#name").html(x.name);
+    const { name, avatar, age } = await response.json();
+    $("#name").html(name);
+    $("#avatar").attr("src", avatar);
+    $("#age").html(age);
   } catch (error) {
     console.log(error);
   }
