@@ -1,17 +1,6 @@
 import "./style/index.scss";
+import { fetchAndRenderHeader } from "./utils/render";
 
-const baseUrl = "http://localhost:8080/users/";
+const backendUrl = "http://localhost:3000/users/";
 
-const getName = async (userId) => {
-  return fetch(`${baseUrl}${userId}`, {
-    headers: {
-      "content-type": "application/json",
-      "Access-Control-Allow-Origin": "true",
-    },
-    method: "GET",
-  });
-};
-
-document.getElementById("name").innerHTML = getName("1").then((res) =>
-  res.json()
-);
+fetchAndRenderHeader(backendUrl);
