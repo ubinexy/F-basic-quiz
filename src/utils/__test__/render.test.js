@@ -26,11 +26,15 @@ describe("app", () => {
     expect(jquery).toHaveBeenCalledWith("#name");
     expect(jquery).toHaveBeenCalledWith("#age");
     expect(jquery).toHaveBeenCalledWith("#avatar");
+    expect(jquery).toHaveBeenCalledWith("#description");
     expect(mockHtml).toHaveBeenCalledWith("KAMIL");
     expect(mockAttr).toHaveBeenCalledWith(
       "src",
       "https://inews.gtimg.com/newsapp_match/0/3581582328/0"
     );
     expect(mockHtml).toHaveBeenCalledWith(24);
+    expect(mockHtml).toHaveBeenCalledWith(
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, non, dolorem, cumque distinctio magni quam expedita velit laborum sunt amet facere tempora ut fuga aliquam ad asperiores voluptatem dolorum! Quasi."
+    );
   });
 });
