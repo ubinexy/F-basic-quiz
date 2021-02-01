@@ -1,0 +1,25 @@
+@import "variables";
+
+.header {
+  text-align: center;
+  margin: 100px auto 0;
+  background-color: $white;
+  width: 1000px;
+  padding: 20px;
+
+  .box {
+    border-bottom: 4px solid $gray-light;
+
+    #avatar {
+      width: $image-size;
+      height: $image-size;
+      margin-top: -50px;
+      border-radius: 50%;
+    }
+
+    .greeting,
+    h2 {
+      text-transform: uppercase;
+    }
+  }
+}
