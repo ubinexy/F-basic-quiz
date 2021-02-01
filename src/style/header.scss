@@ -23,10 +23,28 @@
 }
 
 .section {
-  padding: 0 20px 20px;
+  padding: 0 20px;
 
   .subtitle {
     color: $primary-color;
     text-transform: uppercase;
   }
+
+  .experience {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    .education-detail {
+      width: 700px;
+      background-color: $gray-light;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.section:last-of-type {
+  padding-bottom: 20px;
 }
