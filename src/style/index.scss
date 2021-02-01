@@ -2,3 +2,9 @@
 @import "mixins";
 @import "reboot";
 @import "header";
+
+.main {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: $white;
+}
