@@ -1,6 +1,7 @@
 import "./style/index.scss";
-import { fetchAndRenderHeader } from "./utils/render";
+import { fetchAndRenderHeader, fetchAndRenderEducation } from "./utils/render";
 
-const backendUrl = "http://localhost:3000/users/";
+const url = "http://localhost:3000/users/";
 
-fetchAndRenderHeader(backendUrl);
+fetchAndRenderHeader(url);
+fetchAndRenderEducation(url);
